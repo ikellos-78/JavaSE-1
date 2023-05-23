@@ -28,13 +28,13 @@ package section05;
   
 4번
 			
-   *				
-  ***				  
- *****				
-*******		
- *****			 
-  ***			 
-   *			
+   *   		i:0  j: 4,5,6   j - i > 3
+  ***		i:1  j: 5,6     j - i > 3
+ *****		i:2  j: 6       j - i > 3
+*******		i:3
+ *****		i:4  j:	6       
+  ***		i:5  j:	5,6     
+   *		i:6  j:	4,5,6  
 
    ☆
    *
@@ -57,11 +57,69 @@ package section05;
   8 x 1 = 1		9 x 1 = 9
   
   ....			9 x 9 = 81
-  
 
  
  */
 
 public class LoopHomeWork {
-
+	public static void main(String[] args) {
+//		for(int i = 0; i < 7; i++) {
+//			for(int j = 0; j < 7; j++) {
+//				if(i < 4) {
+//					if(i+j < 3) {
+//						System.out.print(" ");
+//					} else if (j-i > 3) {
+//						System.out.print(" ");
+//					} else {
+//						System.out.print("*");
+//					}
+//				} else {
+//					if(i-j > 3) {
+//						System.out.print(" ");
+//					} else if(i+j > 9) {
+//						System.out.print(" ");
+//					}else {
+//						System.out.print("*");
+//					}
+//				}
+//			}
+//			System.out.println();
+//		}
+		
+//		System.out.println("   ☆");
+//		for(int i = 0; i < 4; i++) {
+//			for(int j = 0; j < 7; j++) {
+//				if(i+j < 3) {
+//					System.out.print(" ");
+//				} else if (j-i > 3) {
+//					System.out.print(" ");
+//				} else {
+//					System.out.print("*");
+//				}
+//			}
+//			System.out.println();
+//		}
+//		System.out.println("  | | Merry Christmas ~*");
+		
+		
+		for(int x = 0; x < 3; x++) {
+			for(int i = 0; i < 9; i++) {
+				for(int j = 0; j < 3; j++) {
+					int dan = j + 2 + x * 3 ; 
+					if(dan < 10)
+						System.out.printf("%d x %d = %d  ", dan, i+1, dan * (i+1));
+				}
+				System.out.println();
+			}
+			System.out.println();
+		}
+	}
 }
+
+
+
+
+
+
+
+
