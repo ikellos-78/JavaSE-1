@@ -28,9 +28,6 @@ package section06;
 49
  
  
- 
- 
- 
  */
 public class ArrayHomeWork {
 
