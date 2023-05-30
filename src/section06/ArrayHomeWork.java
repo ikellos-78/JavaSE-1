@@ -52,8 +52,6 @@ public class ArrayHomeWork {
 			}
 		}
 		
-//		System.out.print("arr["+(i-j)+"]"+"["+j+"]"+" ");
-		
 		for (int i = 0; i < 13; i++) {
 			if(i < 7) {
 				for (int j = 0; j < i+1; j++) {
@@ -66,20 +64,15 @@ public class ArrayHomeWork {
 			}else {
 				for (int j = 0; j < 13-i; j++) {
 					if(i % 2 == 0) {
-						System.out.print(" ");
+						System.out.print(arr[6-j][i-6+j]+" ");
 					} else {
 						System.out.print(arr[i-6+j][6-j]+" ");
 					}
-					
 				}
-				
 			}
-			
 			System.out.println();
 		}
-		
 	}
-
 }
 
 
