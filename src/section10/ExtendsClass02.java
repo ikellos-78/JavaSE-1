@@ -10,6 +10,6 @@ public class ExtendsClass02 {
 		sandwich.sauce = "오리엔탈";
 		
 		sandwich.getInfo();
+		
 	}
-
 }
