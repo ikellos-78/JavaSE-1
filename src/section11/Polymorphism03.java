@@ -2,9 +2,6 @@ package section11;
 /*
  * instanceof 연산자
  * 	객체가 특정 클래스 또는 인터페이스의 인스턴스인지 여부를 확인
- * 
- * 
- * 
  */
 
 import section11.access2.Ade;
